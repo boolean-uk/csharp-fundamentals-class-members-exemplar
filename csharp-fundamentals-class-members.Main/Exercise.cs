@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 
-namespace csharp_fundamentals_class_members.Main
+namespace csharp_fundamentals_class_members_exemplar.Main
 {
     public class Exercise
     {
@@ -24,11 +24,18 @@ namespace csharp_fundamentals_class_members.Main
 
 
 
-        //TODO: 2. Create a String member named firstName with a value of "Jane"
-
+        //TODO: 2. Create a String member named firstName with a value of "Jane"       
+        public string firstName
+        {
+            get { return "Jane"; }           
+        }
 
 
         //TODO: 3. Create a boolean member named isProgrammer with a value of true
+        public bool isProgrammer
+        {
+            get { return true; }    
+        }
 
 
 
@@ -44,6 +51,8 @@ namespace csharp_fundamentals_class_members.Main
 
 
         //TODO: 6. Change the visibility below so that the tests pass
-        private boolean isVisible = true;
+        public bool isVisible = true;
+
+        
     }
 }
