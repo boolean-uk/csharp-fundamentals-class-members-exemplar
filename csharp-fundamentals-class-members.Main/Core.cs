@@ -7,7 +7,7 @@ using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace csharp_fundamentals_class_members_exemplar.Main
 {
-    public class Exercise
+    public class Core
     {
         // Below is an example of a class member in c#.
         // Where a class describes a thing, a member describes its attributes.
@@ -20,7 +20,7 @@ namespace csharp_fundamentals_class_members_exemplar.Main
 
 
         //TODO: 1. Create an integer member named age with a value of 32
-        public int age = 33;
+        public int age = 32;
 
 
 
@@ -32,21 +32,19 @@ namespace csharp_fundamentals_class_members_exemplar.Main
 
 
         //TODO: 3. Create a boolean member named isProgrammer with a value of true
-        public bool isProgrammer
-        {
-            get { return true; }    
-        }
+        public bool isProgrammer => true;
+        
 
 
 
         //TODO: 4. Change the value below so that the tests pass. Check the README.md file for instructions on
         // running and reading tests
-        public int firstNumber = 109;
+        public int firstNumber = 9182;
 
 
 
         //TODO: 5. Change the value below so that the tests pass
-        public string firstString = "Ruby is to Python what car is to carpet.";
+        public string firstString = "She sells C# on the sea shore";
 
 
 

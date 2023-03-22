@@ -1,59 +1,60 @@
-﻿using csharp_fundamentals_class_members.Main;
+﻿
+using csharp_fundamentals_class_members_exemplar.Main;
 using NUnit.Framework;
 
 namespace csharp_fundamentals_class_members.Test
 {
-    public class ExerciseTest
+    public class CoreTests
     {
-        Exercise _exercise;
+        Core _core;
 
 
-        public ExerciseTest()
+        public CoreTests()
         {
-            this._exercise = new Exercise();
+            this._core = new Core();
         }
 
         [Test]
         public void shouldAnswerTheUltimateQuestion()
         {
-            Assert.AreEqual(42, this._exercise.answerToTheUltimateQuestion);
+            Assert.AreEqual(42, this._core.answerToTheUltimateQuestion);
         }
 
         [Test]
         public void shouldBeAged32()
         {
-            Assert.AreEqual(32, this._exercise.age);
+            Assert.AreEqual(32, this._core.age);
         }
 
         [Test]
         public void shouldBeNamedJane()
         {
-            Assert.AreEqual("Jane", this._exercise.firstName);
+            Assert.AreEqual("Jane", this._core.firstName);
         }
 
         [Test]
         public void shouldBeAProgrammer()
         {
-            Assert.IsTrue(this._exercise.isProgrammer);
+            Assert.IsTrue(this._core.isProgrammer);
         }
 
         [Test]
         public void firstNumberShouldBe9182()
         {
-            Assert.AreEqual(9182, this._exercise.firstNumber);
+            Assert.AreEqual(9182, this._core.firstNumber);
         }
 
         [Test]
         public void firstStringShouldBeSpecific()
         {
-            Assert.AreEqual("Java is to Javascript what car is to carpet.", this._exercise.firstString);
+            Assert.AreEqual("She sells C# on the sea shore", this._core.firstString);
         }
 
         [Test]
         public void isVisibleShouldBePublic()
         {
             
-            Assert.IsTrue(this._exercise.isVisible);
+            Assert.IsTrue(this._core.isVisible);
         }
     }
 }
